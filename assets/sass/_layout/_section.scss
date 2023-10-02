@@ -1,0 +1,47 @@
+// Section header area start here ***
+.section-header {
+	margin-bottom: 65px;
+	h5 {
+		padding-bottom: 20px;
+		text-transform: uppercase;
+	}
+	h2 {
+		text-transform: capitalize;
+		color: var(--primary-color);
+	}
+}
+// Section header area end here ***
+
+// Service area start here ***
+.service{
+	&__icon{
+		transition: var(--transition);
+	}
+	&__content{
+		p{
+			font-size: 18px;
+			color: #4f5b6d;
+			font-weight: 600;
+			padding: 20px 0;
+		}
+		a{
+			color: var(--secondary-color);
+		}
+	}
+	&__item{
+		border-radius: 20px;
+		padding: 60px 40px;
+		text-align: center;
+		background-image: linear-gradient(180deg,rgba(255,255,255,0),#fff);
+		border-width: 0 0 5px;
+		border-style: solid;
+		border-color: #5a5fe73d;
+		box-shadow: 0 48px 92px 0 rgb(21 29 189 / 11%);
+		&:hover{
+			.service__icon{
+				transform: rotateY(360deg);
+			}
+		}
+	}
+}
+// Service area end here ***
