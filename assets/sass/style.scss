@@ -1,25 +1,25 @@
 // Google fonts ***
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // Abstracts styles ***
-@import "_abstracts/_mixins";
-@import "_abstracts/_variables";
+@import '_abstracts/_mixins';
+@import '_abstracts/_variables';
 
 // Typography styles***
-@import "_base/_typography";
+@import '_base/_typography';
 
 // Component styles ***
-@import "_components/_buttons";
-@import "_components/_progress";
+@import '_components/_buttons';
+@import '_components/_progress';
 
 // Layout styles ***
-@import "_layout/_header";
-@import "_layout/_banner";
-@import "_layout/_section";
-@import "_layout/_footer";
+@import '_layout/_header';
+@import '_layout/_banner';
+@import '_layout/_section';
+@import '_layout/_footer';
 
 // Animation styles***
-@import "_base/_animation";
+@import '_base/_animation';
 
 // Responsive styles ***
-@import "_base/_responsive";
+@import '_base/_responsive';
