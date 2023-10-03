@@ -1,36 +1,36 @@
 // Button one area start here ***
-.btn-one{
-    padding: 8px 25px;
-    font-weight: 500;
-    color: var(--primary-color);
-    transition: var(--transition);
-    border-radius: 4px;
-    position: relative;
-    text-transform: capitalize;
-    background-color: var(--primary-color);
-    overflow: hidden;
-    span{
-    color: var(--white);
-    position: relative;
-    transition: var(--transition);
-    text-transform: uppercase;
-    font-size: 14px;
-    }
-    &::before{
-  position: absolute;
-  content: "";
-  width: 0%;
-  height: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-color: var(--heading-color);
-  transition: var(--transition);
-  
-    }
-    &:hover::before{
-        width: 100%;
-        left: 0px;
-    }
+.btn-one {
+	padding: 12px 25px;
+	font-weight: 500;
+	color: var(--primary-color);
+	transition: var(--transition);
+	border-radius: 4px;
+	position: relative;
+	text-transform: capitalize;
+	background-color: var(--primary-color);
+	overflow: hidden;
+	span {
+		color: var(--white);
+		position: relative;
+		transition: var(--transition);
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		width: 0%;
+		height: 100%;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		background-color: var(--heading-color);
+		transition: var(--transition);
+	}
+	&:hover::before {
+		width: 100%;
+		left: 0px;
+	}
 }
 // Button one area end here ***

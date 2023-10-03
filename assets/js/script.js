@@ -34,6 +34,50 @@
 	});
 	// Header area end here ***
 
+	var sliderActive1 = ".banner-slider";
+	var sliderInit1 = new Swiper(sliderActive1, {
+		loop: true,
+		slidesPerView: 1,
+		speed: 4000,
+		effect: "fade",
+		autoplay: {
+			delay: 7000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".banner-pegi",
+			type: "fraction",
+		},
+	});
+	// Here this is use for animate ***
+	function animated_swiper(selector, init) {
+		var animated = function animated() {
+			$(selector + " [data-animation]").each(function () {
+				var anim = $(this).data("animation");
+				var delay = $(this).data("delay");
+				var duration = $(this).data("duration");
+				$(this)
+					.removeClass("anim" + anim)
+					.addClass(anim + " animated")
+					.css({
+						webkitAnimationDelay: delay,
+						animationDelay: delay,
+						webkitAnimationDuration: duration,
+						animationDuration: duration,
+					})
+					.one("animationend", function () {
+						$(this).removeClass(anim + " animated");
+					});
+			});
+		};
+		animated();
+		init.on("slideChange", function () {
+			$(sliderActive1 + " [data-animation]").removeClass("animated");
+		});
+		init.on("slideChange", animated);
+	}
+	animated_swiper(sliderActive1, sliderInit1);
+
 	// Scroll down area start here ***
 	$("#scrollDown").on("click", function () {
 		setTimeout(function () {

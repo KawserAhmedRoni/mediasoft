@@ -1,18 +1,64 @@
 // Banner one area start here ***
-.banner{
-    position: relative;
-    &__bg{
-        width: 100%;
-    }
-    &__content{
-        position: absolute;
-        left: 100px;
-        top: 38%;
-        transform: translateY(-50%);
-        width: 40%;
-        h4{
-            padding: 15px 0;
-        }
-    }
+.banner {
+	position: relative;
+	.content {
+		position: relative;
+		z-index: 10;
+		padding: 250px 0;
+		h1 {
+			font-size: 65px;
+			font-weight: 700;
+			line-height: 85px;
+			letter-spacing: 2px;
+			color: var(--white);
+			position: relative;
+		}
+		h4 {
+			font-size: 20px;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+		}
+	}
+	.slide-bg:before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(262.49deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+		z-index: -1;
+		transform: rotate(-180deg);
+	}
+	.slide-bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		z-index: -2;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		transform: scale(1);
+		-webkit-transition: all 8s ease-out 0s;
+		-moz-transition: all 8s ease-out 0s;
+		-ms-transition: all 8s ease-out 0s;
+		-o-transition: all 8s ease-out 0s;
+		transition: all 8s ease-out 0s;
+	}
+	.swiper-slide-active .slide-bg {
+		-webkit-transform: scale(1.12);
+		-moz-transform: scale(1.12);
+		transform: scale(1.12);
+	}
+	.slider-info {
+		position: absolute;
+		top: 50%;
+		left: 1%;
+		z-index: 2;
+		transform: rotate(90deg);
+	}
 }
 // Banner one area end here ***
